@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ATELIER NOIR — Guide · How this was built</title>
-<meta name="description" content="How the ATELIER NOIR site was designed and built by Fable: a horizontal drag-scroll editorial gallery with inertia, wheel-to-horizontal reading and ground/type parallax." />
+<meta name="description" content="How the ATELIER NOIR site was designed and built by Formwork: a horizontal drag-scroll editorial gallery with inertia, wheel-to-horizontal reading and ground/type parallax." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,500&family=Archivo:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
@@ -51,7 +51,7 @@
 
   <span class="tag">Build guide · Site 06 of 25</span>
   <h1>An editorial you read <em>sideways</em>.</h1>
-  <p class="lede">ATELIER NOIR is one of 25 sites designed and built by Fable to demonstrate
+  <p class="lede">ATELIER NOIR is one of 25 sites designed and built by Formwork to demonstrate
     web design, motion and taste. Here is exactly how this one was made — and how you can do the same.</p>
 
   <h2>The idea</h2>
@@ -102,8 +102,8 @@
   <h2>Ship it on GitHub Pages</h2>
   <p>Every site here is static, so hosting is three commands:</p>
   <pre><code>git init -b main &amp;&amp; git add -A &amp;&amp; git commit -m "ship"
-gh repo create fable-atelier --public --source=. --push
-gh api --method POST /repos/OWNER/fable-atelier/pages \
+gh repo create formwork-atelier --public --source=. --push
+gh api --method POST /repos/OWNER/formwork-atelier/pages \
   -f 'source[branch]=main' -f 'source[path]=/'</code></pre>
   <p>Use <strong>relative paths</strong> (<code>./main.js</code>, not <code>/main.js</code>) because project
     Pages live under <code>/repo-name/</code>. Add an empty <code>.nojekyll</code> file so every asset serves verbatim.</p>
@@ -113,7 +113,7 @@ gh api --method POST /repos/OWNER/fable-atelier/pages \
     static hosting. The other 24 sites each swap the central technique — shaders, particles, kinetic
     type, isometric 3D — but the discipline is the same.</p>
 
-  <footer>Designed &amp; built by <strong>Fable</strong> · Part of a 25-site showcase · <a href="../">Return to ATELIER NOIR →</a></footer>
+  <footer>Designed &amp; built by <strong>Formwork</strong> · Part of a 25-site showcase · <a href="../">Return to ATELIER NOIR →</a></footer>
 </div>
 </body>
 </html>
